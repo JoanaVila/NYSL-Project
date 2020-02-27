@@ -1,0 +1,59 @@
+
+header{
+    padding-left: 30px;
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    padding-right: 200px;
+}
+h2{
+    font-family: sans-serif; 
+    font-style: italic;  
+}
+header p{
+    font-family: sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    padding-left: 0px;
+}
+.table{
+    width:70%;
+    font-family: sans-serif;
+    text-align: left;
+}
+.table th{
+    text-decoration: underline;
+    padding-top: 20px;
+}
+.month{
+    text-decoration: underline;
+    text-align: center;
+    width: 156px;
+}
+.date{
+    text-align: center;
+}
+.table_1{
+    text-align: left;
+    font-family: sans-serif;
+    margin-top: 30px;
+    padding-left: 30px;
+    width:90%;
+    }
+p{
+    font-family: sans-serif;
+    padding-left: 30px;
+}
+#p_1{
+    width: 70%;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+}
+
+
+

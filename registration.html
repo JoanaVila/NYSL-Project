@@ -32,6 +32,7 @@
             <input type="text" name="email" id="email"><br>
         </fieldset>
         <fieldset>
+            <p>Which elementary schools do you live near?</p>
             <label for="fschool">First Closest School:</label>
             <select id="fschool" name="fschool">
                 <option value="AJ Katzenmaier">AJ Katzenmaier</option>
@@ -53,15 +54,63 @@
             </select>
         </fieldset>
         <fieldset>
-            <label for="position">What position(s) do you normally play?</label>
-            <input type="checkbox" id="position1" name="position1" value=" Forward">
-
+            <p>What position(s) do you normally play? (check all that apply)</p>
+            <input type="checkbox" id="position1" name="position1" value="Forward">
+            <label for="uposition">Forward</label>
+            <input type="checkbox" id="position1" name="position1" value="Midfield">
+            <label for="position">Midfield</label>
+            <input type="checkbox" id="position1" name="position1" value="Defense">
+            <label for="position">Defense</label> 
+            <input type="checkbox" id="position1" name="position1" value="Goalkeeper">
+            <label for="position">Goalkeeper</label>
         </fieldset>
-
+        <fieldset>
+            <p>What position(s) do you want to play? (check all that apply)</p>
+            <input type="checkbox" id="position2" name="position2" value="Forward">
+            <label for="uposition">Forward</label>
+            <input type="checkbox" id="position2" name="position2" value="Midfield">
+            <label for="position">Midfield</label>
+            <input type="checkbox" id="position2" name="position2" value="Defense">
+            <label for="position">Defense</label> 
+            <input type="checkbox" id="position2" name="position2" value="Goalkeeper">
+            <label for="position">Goalkeeper</label>
+        </fieldset>
+        <fieldset>
+            <input type="radio" id="uniform" name="uniform" value="uniform">
+            <label for="uniform"> Already Have a Uniform</label>
+            <p>Jersey Size:</p>
+            <input type="radio" id="Youth Small" name="size" value="Youth Small">
+            <label for="size">Youth Small</label>
+            <input type="radio" id="Youth Medium" name="size" value="Youth Medium">
+            <label for="size">Youth Medium</label>
+            <input type="radio" id="Youth Large" name="size" value="Youth Large">
+            <label for="size"> Youth Large </label>
+            <input type="radio" id="Small" name="size" value="Small">
+            <label for="size">Small</label>
+            <input type="radio" id=" Medium" name="size" value=" Medium">
+            <label for="size">Medium</label>
+            <input type="radio" id="Large" name="size" value="Large">
+            <label for="size">Large</label>
+            <input type="radio" id="Extra-Large" name="size" value="Extra-Large">
+            <label for="size">Extra-Large</label>
+            <br>
+            <p>Shorts Size:</p>
+            <input type="radio" id="Youth Small" name="size" value="Youth Small">
+            <label for="size">Youth Small</label>
+            <input type="radio" id="Youth Medium" name="size" value="Youth Medium">
+            <label for="size">Youth Medium</label>
+            <input type="radio" id="Youth Large" name="size" value="Youth Large">
+            <label for="size"> Youth Large </label>
+            <input type="radio" id="Small" name="size" value="Small">
+            <label for="size">Small</label>
+            <input type="radio" id=" Medium" name="size" value=" Medium">
+            <label for="size">Medium</label>
+            <input type="radio" id="Large" name="size" value="Large">
+            <label for="size">Large</label>
+            <input type="radio" id="Extra-Large" name="size" value="Extra-Large">
+            <label for="size">Extra-Large</label>
+        </fieldset>
         <button name="submit">Submit</button>
-
     </form>
-    
-    
 </body>
 </html>

@@ -4,37 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <link rel="stylesheet" href="./STYLES/registration_form.css">
 </head>
 <body>
-    <h1>Registration Form</h1>
+    <div class="title"><h1>Registration Form</h1></div>
     <form action="show_data.html" method="GET">
         <fieldset>
-            <label for="fname">First Name:</label>
-            <input type="text" name="fname" id="fname">
-            &nbsp;
-            <label for="lname">Last Name:</label>
-            <input type="text" name="lname" id="lname"><br>
-            <label for="adress">Street Address:</label>
-            <input type="text" name="adress" id="adress"><br>
-            <label for="city">City:</label>
-            <input type="text" name="city" id="city">
-            &nbsp;
-            <label for="zcode">Zip Code:</label>
-            <input type="text" name="zcode" id="zcode"><br>
-            <label for="bdate">Birth Date:</label>
-            <input type="text" name="bdate" id="bdate"><br>
-            <label for="parent">Parent/Guardian:</label>
-            <input type="text" name="parent" id="parent"><br>
-            <label for="phone">Contact Phone:</label>
-            <input type="text" name="phone" id="phone">
-            &nbsp;
-            <label for="email">Contact E-mail:</label>
-            <input type="text" name="email" id="email"><br>
+                <div class="names">
+                    <div class="first_child">
+                        <label for="fname">First Name:</label>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+                    <div class="second_child">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+                </div>
+                <br>
+                <div class="form-row">
+                <label for="adress">Street Address:</label>
+                <input type="text" name="adress" id="adress"><br>
+                </div>
+                <br>
+                <div class="names">
+                    <div class="first_child">
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div class="second_child">
+                        <label for="zcode">Zip Code:</label>
+                        <input type="text" name="zcode" id="zcode">
+                    </div>
+                </div>
+                <br>
+                <div class="names">
+                    <div class="first_child">
+                        <label for="bdate">Birth Date:</label>
+                        <input type="text" name="bdate" id="bdate">
+                    </div>
+                    <p>Gender:
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label></p>
+                </div>
+                <br>
+                    <div class="form-row">
+                        <label for="parent">Parent/Guardian:</label>
+                        <input type="text" name="parent" id="parent">
+                    </div>
+                <br>
+                <div class="names">
+                    <div class="first_child">
+                        <label for="phone">Contact Phone:</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                    <div class="second_child">
+                        <label for="email">Contact E-mail:</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+        </div>
         </fieldset>
         <fieldset>
-            <p>Which elementary schools do you live near?</p>
-            <label for="fschool">First Closest School:</label>
-            <select id="fschool" name="fschool">
+            <p class="bold">Which elementary schools do you live near?</p>
+                <label class="bold" for="fschool">First Closest School:</label>
+                <select id="fschool" name="fschool">
                 <option value="AJ Katzenmaier">AJ Katzenmaier</option>
                 <option value=" Greenbay">Greenbay</option>
                 <option value="Howard A Yeager">Howard A Yeager</option>
@@ -43,7 +77,7 @@
                 <option value="South Elementary"> South Elementary</option>
             </select>
             &nbsp;
-            <label for="sschool">Second Closest School:</label>
+            <label class="bold" for="sschool">Second Closest School:</label>
             <select id="sschool" name="sschool">
                 <option value="AJ Katzenmaier">AJ Katzenmaier</option>
                 <option value=" Greenbay">Greenbay</option>
@@ -54,62 +88,91 @@
             </select>
         </fieldset>
         <fieldset>
-            <p>What position(s) do you normally play? (check all that apply)</p>
-            <input type="checkbox" id="position1" name="position1" value="Forward">
-            <label for="uposition">Forward</label>
-            <input type="checkbox" id="position1" name="position1" value="Midfield">
-            <label for="position">Midfield</label>
-            <input type="checkbox" id="position1" name="position1" value="Defense">
-            <label for="position">Defense</label> 
-            <input type="checkbox" id="position1" name="position1" value="Goalkeeper">
-            <label for="position">Goalkeeper</label>
+            <p class="bold">What position(s) do you normally play? (check all that apply)</p>
+            <div class="position">
+                <div class="checkbox"><input type="checkbox" id="position1" name="position1" value="Forward">
+                <label for="position1">Forward</label></div>
+                <div class="checkbox"><input type="checkbox" id="position2" name="position2" value="Midfield">
+                <label for="position2">Midfield</label></div>
+                <div class="checkbox"><input type="checkbox" id="position3" name="position3" value="Defense">
+                <label for="position3">Defense</label></div> 
+                <div class="checkbox"><input type="checkbox" id="position4" name="position4" value="Goalkeeper">
+                <label for="position4">Goalkeeper</label></div>
+            </div>
         </fieldset>
         <fieldset>
-            <p>What position(s) do you want to play? (check all that apply)</p>
-            <input type="checkbox" id="position2" name="position2" value="Forward">
-            <label for="uposition">Forward</label>
-            <input type="checkbox" id="position2" name="position2" value="Midfield">
-            <label for="position">Midfield</label>
-            <input type="checkbox" id="position2" name="position2" value="Defense">
-            <label for="position">Defense</label> 
-            <input type="checkbox" id="position2" name="position2" value="Goalkeeper">
-            <label for="position">Goalkeeper</label>
+            <p class="bold">What position(s) do you want to play? (check all that apply)</p>
+            <div class="position">
+                <div class="checkbox"><input type="checkbox" id="position5" name="position5" value="Forward">
+                <label for="position5">Forward</label></div>
+                <div class="checkbox"><input type="checkbox" id="position6" name="position6" value="Midfield">
+                <label for="position6">Midfield</label></div>
+                <div class="checkbox"><input type="checkbox" id="position7" name="position7" value="Defense">
+                <label for="position7">Defense</label></div>
+                <div class="checkbox"><input type="checkbox" id="position8" name="position8" value="Goalkeeper">
+                <label for="position8">Goalkeeper</label></div>
+            </div>
         </fieldset>
         <fieldset>
             <input type="radio" id="uniform" name="uniform" value="uniform">
-            <label for="uniform"> Already Have a Uniform</label>
-            <p>Jersey Size:</p>
-            <input type="radio" id="Youth Small" name="size" value="Youth Small">
-            <label for="size">Youth Small</label>
-            <input type="radio" id="Youth Medium" name="size" value="Youth Medium">
-            <label for="size">Youth Medium</label>
-            <input type="radio" id="Youth Large" name="size" value="Youth Large">
-            <label for="size"> Youth Large </label>
-            <input type="radio" id="Small" name="size" value="Small">
-            <label for="size">Small</label>
-            <input type="radio" id=" Medium" name="size" value=" Medium">
-            <label for="size">Medium</label>
-            <input type="radio" id="Large" name="size" value="Large">
-            <label for="size">Large</label>
-            <input type="radio" id="Extra-Large" name="size" value="Extra-Large">
-            <label for="size">Extra-Large</label>
+            <label class="bold" for="uniform"> Already Have a Uniform</label>
+            <div class="paragraph">
+            <p class="bold">Jersey Size:</p>
+            <p class="bold">Shorts Size:</p>
+            </div>
+            <div class="uniform">
+                
+                <div id="size">
+                    <div class="radio"><input type="radio" id="YouthSmall" name="size" value="YouthSmall">
+                    <label for="YouthSmall">Youth Small</label></div>
+                    <div class="radio"><input type="radio" id="YouthMedium" name="size" value="YouthMedium">
+                    <label for="YouthMedium">Youth Medium</label></div>
+                    <div class="radio"><input type="radio" id="YouthLarge" name="size" value="YouthLarge">
+                    <label for="YouthLarge"> Youth Large </label></div>
+                    <div class="radio"><input type="radio" id="Small" name="size" value="Small">
+                    <label for="Small">Small</label></div>
+                    <div class="radio"><input type="radio" id="Medium" name="size" value="Medium">
+                    <label for="Medium">Medium</label></div>
+                    <div class="radio"><input type="radio" id="Large" name="size" value="Large">
+                    <label for="Large">Large</label></div>
+                    <div class="radio"><input type="radio" id="ExtraLarge" name="size" value="ExtraLarge">
+                    <label for="ExtraLarge">Extra-Large</label></div>
+                </div>
             <br>
-            <p>Shorts Size:</p>
-            <input type="radio" id="Youth Small" name="size" value="Youth Small">
-            <label for="size">Youth Small</label>
-            <input type="radio" id="Youth Medium" name="size" value="Youth Medium">
-            <label for="size">Youth Medium</label>
-            <input type="radio" id="Youth Large" name="size" value="Youth Large">
-            <label for="size"> Youth Large </label>
-            <input type="radio" id="Small" name="size" value="Small">
-            <label for="size">Small</label>
-            <input type="radio" id=" Medium" name="size" value=" Medium">
-            <label for="size">Medium</label>
-            <input type="radio" id="Large" name="size" value="Large">
-            <label for="size">Large</label>
-            <input type="radio" id="Extra-Large" name="size" value="Extra-Large">
-            <label for="size">Extra-Large</label>
+            
+                <div id="size">
+                    <div class="radio"><input type="radio" id="Youthsmall" name="size" value="Youthsmall">
+                    <label for="Youthsmall">Youth Small</label></div>
+                    <div class="radio"><input type="radio" id="Youthmedium" name="size" value="Youthmedium">
+                    <label for="Youthmedium">Youth Medium</label></div>
+                    <div class="radio"><input type="radio" id="Youthlarge" name="size" value="Youthlarge">
+                    <label for="Youthlarge"> Youth Large </label></div>
+                    <div class="radio"><input type="radio" id="small" name="size" value="small">
+                    <label for="small">Small</label></div>
+                    <div class="radio"><input type="radio" id="medium" name="size" value="medium">
+                    <label for="medium">Medium</label></div>
+                    <div class="radio"><input type="radio" id="large" name="size" value="large">
+                    <label for="large">Large</label></div>
+                    <div class="radio"><input type="radio" id="Extralarge" name="size" value="Extralarge">
+                    <label for="Extralarge">Extra-Large</label></div>
+                </div>
+            </div>
         </fieldset>
+        <p class="bold_underlined">Permission to Play</p>
+            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.</p>
+            <p>By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+        <br>
+            <div class="names">
+                <div class="first_child">
+                    <label for="fname">Parent/Guardian Signature:</label>
+                    <input type="text" name="signature" id="signature">
+                </div>
+                <div class="second_child">
+                <label for="lname">Date:</label>
+                <input type="text" name="date" id="date">
+                </div>
+            </div>
+        <br>
         <button name="submit">Submit</button>
     </form>
 </body>

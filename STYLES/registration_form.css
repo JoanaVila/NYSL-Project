@@ -1,0 +1,81 @@
+.title{
+    text-align: center;
+}
+fieldset{
+    border-style: hidden;
+}
+.names{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; 
+}
+.first_child{
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    flex-grow: 1;
+    padding-right: 10px;
+}
+.first_child input{
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.second_child{
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    flex-grow: 1;
+}
+.second_child input{
+    flex-grow: 1;
+    margin-left: 10px;
+}
+.form-row{
+    display: flex;
+}
+.form-row input{
+    flex:1;
+}
+.names p{
+    flex-direction: row;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 50%;
+}
+.position {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    flex-direction: column;
+    height: 50px;
+    align-content: stretch;
+}
+.uniform{
+    display: flex;
+    align-content: stretch;
+}
+#size {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 70px;
+}
+
+.bold{
+    font-weight: bolder;
+}
+.bold_underlined{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.paragraph{
+    display: flex;
+    padding-top: 10px;
+}
+.paragraph p {
+    width: 50%;  
+}

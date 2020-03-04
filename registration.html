@@ -5,9 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link rel="stylesheet" href="./STYLES/registration_form.css">
+    <link rel="stylesheet" href="./STYLES/nysl_3.css">
 </head>
 <body>
-    <div class="title"><h1>Registration Form</h1></div>
+    <header>
+        <div class="header-div">
+            <h1>Northside Youth Soccer League</h1>
+        </div>
+        <div class="section">
+            <h2>Upcoming Events</h2>
+        </div>
+        <img class="logo_image" src="nysl_logo.png" alt="logo" width="75" height="75">
+    </header>
+    <section class="menu">
+        <p class= "other-pages"><a href="home.html">Home</a></p>
+        <p class= "other-pages"><a href="about.html">About NYSL</a></p>
+        <p class="other-pages"><a href="contact.html">Contact</a></p>
+        <p class="other-pages"><a href="rules.html">Rules & Policies</a></p>
+        <p class="other-pages"><a href="game_info.html">Game Information</a></p>
+        <p id="registration-page"><strong>Registration Form</strong></p>
+    </section>
+    <aside class="content">
+    <div class="title"><h1 class="Tcontent">Registration Form</h1></div>
     <form action="show_data.html" method="GET">
         <fieldset>
                 <div class="names">
@@ -121,7 +140,6 @@
             <p class="bold">Shorts Size:</p>
             </div>
             <div class="uniform">
-                
                 <div id="size">
                     <div class="radio"><input type="radio" id="YouthSmall" name="size" value="YouthSmall">
                     <label for="YouthSmall">Youth Small</label></div>
@@ -139,7 +157,6 @@
                     <label for="ExtraLarge">Extra-Large</label></div>
                 </div>
             <br>
-            
                 <div id="size">
                     <div class="radio"><input type="radio" id="Youthsmall" name="size" value="Youthsmall">
                     <label for="Youthsmall">Youth Small</label></div>
@@ -175,5 +192,6 @@
         <br>
         <button name="submit">Submit</button>
     </form>
+    </aside>
 </body>
 </html>

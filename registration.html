@@ -9,11 +9,10 @@
 </head>
 <body>
     <header>
-        <div class="header-div">
-            <h1>Northside Youth Soccer League</h1>
-        </div>
+        <div class="header-div"></div>
+        <h1>Northside Youth Soccer League</h1>
         <div class="section">
-            <h2>Upcoming Events</h2>
+            <h2>Registration Form</h2>
         </div>
         <img class="logo_image" src="nysl_logo.png" alt="logo" width="75" height="75">
     </header>
@@ -23,9 +22,10 @@
         <p class="other-pages"><a href="contact.html">Contact</a></p>
         <p class="other-pages"><a href="rules.html">Rules & Policies</a></p>
         <p class="other-pages"><a href="game_info.html">Game Information</a></p>
-        <p id="registration-page"><strong>Registration Form</strong></p>
+        <p id="main-page"><strong>Registration Form</strong></p>
     </section>
-    <aside class="content">
+    <div class= "div-content">
+    <div class="content">
     <div class="title"><h1 class="Tcontent">Registration Form</h1></div>
     <form action="show_data.html" method="GET">
         <fieldset>
@@ -66,6 +66,22 @@
                     <label for="female">Female</label>
                     <input type="radio" id="male" name="gender" value="male">
                     <label for="male">Male</label></p>
+                </div>
+                <br>
+                <div class="grade">
+                    <p>Grade:</p>
+                    <input type="radio" id="grade" name="grade">
+                    <label for="grade">&nbspPre-school</label>
+                    <input type="radio" id="grade" name="grade">
+                    <label for="grade">&nbsp1st</label>
+                    <input type="radio" id="grade" name="grade">
+                    <label for="grade">&nbsp2nd</label>
+                    <input type="radio" id="grade" name="grade">
+                    <label for="grade">&nbsp3rd</label>
+                    <input type="radio" id="grade" name="grade">
+                    <label for="grade">&nbsp4th</label>
+                    <input type="radio" id="grade" name="grade">
+                    <label for="grade">&nbsp5th</label>
                 </div>
                 <br>
                     <div class="form-row">
@@ -140,7 +156,7 @@
             <p class="bold">Shorts Size:</p>
             </div>
             <div class="uniform">
-                <div id="size">
+                <div class="size">
                     <div class="radio"><input type="radio" id="YouthSmall" name="size" value="YouthSmall">
                     <label for="YouthSmall">Youth Small</label></div>
                     <div class="radio"><input type="radio" id="YouthMedium" name="size" value="YouthMedium">
@@ -156,21 +172,20 @@
                     <div class="radio"><input type="radio" id="ExtraLarge" name="size" value="ExtraLarge">
                     <label for="ExtraLarge">Extra-Large</label></div>
                 </div>
-            <br>
-                <div id="size">
-                    <div class="radio"><input type="radio" id="Youthsmall" name="size" value="Youthsmall">
+                <div class="size">
+                    <div class="radio"><input type="radio" id="Youthsmall" name="Size" value="Youthsmall">
                     <label for="Youthsmall">Youth Small</label></div>
-                    <div class="radio"><input type="radio" id="Youthmedium" name="size" value="Youthmedium">
+                    <div class="radio"><input type="radio" id="Youthmedium" name="Size" value="Youthmedium">
                     <label for="Youthmedium">Youth Medium</label></div>
-                    <div class="radio"><input type="radio" id="Youthlarge" name="size" value="Youthlarge">
+                    <div class="radio"><input type="radio" id="Youthlarge" name="Size" value="Youthlarge">
                     <label for="Youthlarge"> Youth Large </label></div>
-                    <div class="radio"><input type="radio" id="small" name="size" value="small">
+                    <div class="radio"><input type="radio" id="small" name="Size" value="small">
                     <label for="small">Small</label></div>
-                    <div class="radio"><input type="radio" id="medium" name="size" value="medium">
+                    <div class="radio"><input type="radio" id="medium" name="Size" value="medium">
                     <label for="medium">Medium</label></div>
-                    <div class="radio"><input type="radio" id="large" name="size" value="large">
+                    <div class="radio"><input type="radio" id="large" name="Size" value="large">
                     <label for="large">Large</label></div>
-                    <div class="radio"><input type="radio" id="Extralarge" name="size" value="Extralarge">
+                    <div class="radio"><input type="radio" id="Extralarge" name="Size" value="Extralarge">
                     <label for="Extralarge">Extra-Large</label></div>
                 </div>
             </div>
@@ -192,6 +207,7 @@
         <br>
         <button name="submit">Submit</button>
     </form>
-    </aside>
+    </div>
+    </div>
 </body>
 </html>
